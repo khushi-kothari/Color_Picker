@@ -1,78 +1,44 @@
-* {
-  font-size: 30px;
-  font: bolder;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
-.fluid-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background-color: pink;
-}
+    <script src="main.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Picker</title>
+  </head>
+  <body>
+    <div class="fluid-container" id="fluid-container">
+      <div class="form shadow-lg p-3 mb-5 bg-white rounded">
+        <label for="favcolor"> Select your favorite color</label>
+        <hr />
+        <br />
 
-.form {
-  margin: auto;
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin: auto;
-  font-family: "Dancing Script", cursive;
-}
-
-#favcolor {
-  width: 180px;
-  height: 180px;
-  border: black;
-  margin: auto;
-}
-
-.btn {
-  margin: auto;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 6px black;
-  font-size: 25px;
-  border: black;
-  border-radius: 10px;
-  box-shadow: 3px 5px 20px 2px #888888;
-}
-
-@media (max-width: 400px) {
-  .form {
-    height: 65vh;
-    width: 100vw;
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
-
-  hr {
-    color: transparent;
-  }
-
-  label {
-    font-size: 25px;
-    padding: 25px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 3px 5px 20px 2px #888888;
-  }
-
-  #favcolor {
-    margin-top: -50px;
-    width: 135px;
-    height: 135px;
-    border: 15px solid white;
-    border-radius: 20px;
-  }
-
-  .btn {
-    width: 80%;
-    font-size: 17px;
-    border: 15px solid white;
-    border-radius: 20px;
-  }
-}
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+        <br />
+        <button
+          type="button"
+          onclick="myfunction();"
+          class="btn btn-success"
+          autocomplete="off"
+          id="button"
+        >
+          Choose this
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
