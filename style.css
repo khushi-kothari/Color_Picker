@@ -13,15 +13,21 @@
 .form {
   margin: auto;
   margin-top: 100px;
-  background-color: white;
+  /*background-color: white;*/
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 label {
   margin: auto;
   font-family: "Dancing Script", cursive;
+  background-color: white;
+  box-shadow: 3px 5px 20px 2px #888888;
+  padding: 25px;
+  border-radius: 30px;
 }
 
 #favcolor {
@@ -29,52 +35,7 @@ label {
   height: 180px;
   border: black;
   margin: auto;
-}
-
-.btn {
-  margin: auto;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 6px black;
-  font-size: 25px;
-  border: black;
-  border-radius: 10px;
-  box-shadow: 3px 5px 20px 2px #888888;
-}
-
-@media (max-width: 400px) {
-  .form {
-    height: 65vh;
-    width: 100vw;
-    margin-top: 140px;
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
-
-  hr {
-    color: transparent;
-  }
-
-  label {
-    font-size: 25px;
-    padding: 25px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 3px 5px 20px 2px #888888;
-  }
-
-  #favcolor {
-    margin-top: -50px;
-    width: 135px;
-    height: 135px;
-    border: 15px solid white;
-    border-radius: 20px;
-  }
-
-  .btn {
-    width: 80%;
-    font-size: 17px;
-    border: 15px solid white;
-    border-radius: 20px;
-  }
+  margin-top: -10px;
+  border: 15px solid white;
+  border-radius: 20px;
 }
