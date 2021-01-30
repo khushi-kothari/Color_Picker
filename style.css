@@ -1,0 +1,39 @@
+* {
+  font-size: 30px;
+  font: bolder;
+}
+
+.fluid-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: pink;
+}
+
+.form {
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+label {
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+#favcolor {
+  width: 200px;
+  height: 200px;
+  border: black;
+  margin-left: 80px;
+}
+
+.btn {
+  margin: 50px 80px;
+  text-shadow: 2px 2px 6px black;
+  border: black;
+  border-radius: 10px;
+  box-shadow: 3px 5px 20px 2px #888888;
+}
